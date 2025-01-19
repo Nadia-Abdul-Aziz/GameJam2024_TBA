@@ -1,1 +1,1 @@
-This is the shared gut for the game jam!
+This is the shared github for the game jam!
