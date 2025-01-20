@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: {fileID: 1855740797}
+  cauldron: {fileID: 2109153750}
 --- !u!4 &1505557603
 Transform:
   m_ObjectHideFlags: 0
@@ -1206,7 +1207,7 @@ GameObject:
   - component: {fileID: 2109153752}
   - component: {fileID: 2109153755}
   m_Layer: 5
-  m_Name: newButton
+  m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1219,16 +1220,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109153750}
-  m_LocalRotation: {x: 0.008637012, y: -0.0012469249, z: 0.14288308, w: 0.9897011}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.008726281, y: 0.000069416405, z: -0.0079543, w: 0.99993026}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1955862093}
-  m_LocalEulerAnglesHint: {x: 1, y: 0, z: -1423.57}
+  m_LocalEulerAnglesHint: {x: 1, y: 0, z: -1440.912}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 319, y: -125}
+  m_AnchoredPosition: {x: 333, y: -114}
   m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109153752
