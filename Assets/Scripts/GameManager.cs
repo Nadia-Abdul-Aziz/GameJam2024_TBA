@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         displayNumber();
-
     }
 
     public void increaseAndDisplay()
