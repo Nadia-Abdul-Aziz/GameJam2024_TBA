@@ -8,7 +8,7 @@ public class StoreUpgrade : MonoBehaviour
     [SerializeField] Text priceValue;
     [SerializeField] Text income;
     [SerializeField] Button upgradeButton;
-    [SerializedField] Image ingredientImage;
+    [SerializeField] Image ingredientImage;
     [SerializeField] Text ingredientName;
 
 
