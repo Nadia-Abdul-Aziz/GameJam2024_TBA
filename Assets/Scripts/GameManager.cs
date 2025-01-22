@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text income;
     [SerializeField] GameObject cauldron;
     [SerializeField] StoreUpgrade[] storeUpgrades;
+    [SerializeField] MultiplierManagement[] multipliers;
     [SerializeField] int updatesPerSecond = 5;
     bool isRotated = false;
     public float countValue = 0;
@@ -36,9 +37,9 @@ public class GameManager : MonoBehaviour
 
     void IdleIncome(){
         float income = 0;
-        foreach (var StoreUpgrade in storeUpgrades){
-           income += StoreUpgrade.IncomePerSecond(); 
-           StoreUpgrade.UpdateUI();
+        for (int i = 0; i < storeUpgrades.Length; i++){
+            income += (storeUpgrades[i].IncomePerSecond())*(multipliers[i].CummulativeMultiplier());
+            //storeUpgrades.UpdateUI();
         }
         countValue += (income/updatesPerSecond);
         incomePerSecond = income;
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
     }
 
     //Function that verifies if you can pay the upgrade
-    public bool PurchaseUpgrade(int cost) {
+    public bool PurchasePossible(int cost) {
         if (countValue >= cost) {
             countValue -= cost;
             displayNumber();
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    
     //Function that pops back the cauldron
     void CauldronScaleBack() {
         cauldron.transform.DOBlendableScaleBy(new Vector3(-0.05f, -0.05f, -0.05f), 0.05f);
@@ -82,9 +84,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //increases count value, called in the increaseAndDisplay() function
+    //increases count value according to current multiplier, called in the increaseAndDisplay() function
     void Increase() {
-        countValue++;
+        countValue += multipliers[0].CummulativeMultiplier();
     }
 
     //Changes the value of the counter in the UI. Called in Start() and increaseAndDisplay()
