@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.Diagnostics;
 
 public class UiManager : MonoBehaviour
 {
@@ -16,13 +17,16 @@ public class UiManager : MonoBehaviour
         // upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
         upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
         ingredients.DOAnchorPos(new Vector2(-600,0),0.25f);
-        
+        multipliers.DOAnchorPos(new Vector2(0,0),0.25f);
         
     }
 
     public void UpgradeButton(){
-        multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
-        ingredients.DOAnchorPos(new Vector2(-600,0),0.25f);
+      
+            upgrades.DOAnchorPos(new Vector2(0,0),0.25f);
+            multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
+            ingredients.DOAnchorPos(new Vector2(-300,0),0.25f);
+            
 
     }
 
@@ -32,6 +36,7 @@ public class UiManager : MonoBehaviour
     public void ingredientButton(){
         multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
         upgrades.DOAnchorPos(new Vector2(-600,0),0.25f);
+        ingredients.DOAnchorPos(new Vector2(0,0),0.25f);
 
 
     }
