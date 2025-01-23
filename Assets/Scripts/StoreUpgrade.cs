@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class StoreUpgrade : MonoBehaviour
 {
     //Fields to link through Unity interface to be able to update the text on the upgrade buttons
-    [SerializeField] Text priceValue;
-    [SerializeField] Text income;
+    [SerializeField] Text upgradePrice;
+    [SerializeField] Text incomePerSecond;
     [SerializeField] Button upgradeButton;
     [SerializeField] Image ingredientImage;
     [SerializeField] Text ingredientName;
@@ -30,24 +30,25 @@ public class StoreUpgrade : MonoBehaviour
     //At start, updates the UI to allow 
     void Start()
     {
-        UpdateUI();
+        //UpdateUI();
     }
 
-    //
+    //checks if it's possible to buy the upgrade
     public void BuyUpgrade(){
         int price = CalculatePrice();
-        bool purchasePossible = gameManager.PurchaseUpgrade(price);
+        bool purchasePossible = gameManager.PurchasePossible(price);
         if (purchasePossible){
             level++;
-            UpdateUI();
+            //UpdateUI();
         }
     }
 
     //  Updates both price and effect of the upgrade on the upgrade button
-    public void UpdateUI()
-    {
-        priceValue.text = CalculatePrice().ToString();
-        income.text = level.ToString() + " x " + numPerUpgrade + "/s";
+    // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
+    /*
+    public void UpdateUI() {
+        upgradePrice.text = CalculatePrice().ToString();
+        incomePerSecond.text = level.ToString() + " x " + numPerUpgrade + "/s";
         bool canBuy = gameManager.countValue >= CalculatePrice();
         upgradeButton.interactable = canBuy;
 
@@ -56,6 +57,7 @@ public class StoreUpgrade : MonoBehaviour
 
         ingredientName.text = isPurchased ? ingredient : "???";
     }
+    */
 
     //Function that does the math for calculating the upgrade price
     int CalculatePrice()
