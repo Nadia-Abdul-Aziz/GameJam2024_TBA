@@ -462,7 +462,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bubble 3_pop04_0: 6357366516845807775
+      Bubble 3_pop04_1: 8558799641591442995
+      Bubble 3_pop04_10: -6591760828276907487
+      Bubble 3_pop04_2: 7211558157012550211
+      Bubble 3_pop04_3: -275336479697991665
+      Bubble 3_pop04_4: -6354799820675635499
+      Bubble 3_pop04_5: 6523550995512330938
+      Bubble 3_pop04_6: -4198852507738358047
+      Bubble 3_pop04_7: 2398801776786828365
+      Bubble 3_pop04_8: 1361929122412870333
+      Bubble 3_pop04_9: -3947525678730899944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

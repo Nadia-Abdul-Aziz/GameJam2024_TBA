@@ -12,7 +12,7 @@ public class MultiplierManagement : MonoBehaviour
     public int multiplierStartPrice = 100;
     public int multiplierValue = 2;
     public string multiplierName;
-    public int[] multiplierTable;
+    public int[] multiplierTable = {5,10,100,100,100,1000,1000,1000,1000,10000,10000,10000,10000,10000};
 
     public GameManager gameManager;
 

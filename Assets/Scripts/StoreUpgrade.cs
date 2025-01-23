@@ -30,7 +30,7 @@ public class StoreUpgrade : MonoBehaviour
     //At start, updates the UI to allow 
     void Start()
     {
-        UpdateUI();
+        //UpdateUI();
     }
 
     //checks if it's possible to buy the upgrade
@@ -39,14 +39,14 @@ public class StoreUpgrade : MonoBehaviour
         bool purchasePossible = gameManager.PurchasePossible(price);
         if (purchasePossible){
             level++;
-            UpdateUI();
+            //UpdateUI();
         }
     }
 
     //  Updates both price and effect of the upgrade on the upgrade button
     // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
-    public void UpdateUI()
-    {
+    /*
+    public void UpdateUI() {
         upgradePrice.text = CalculatePrice().ToString();
         incomePerSecond.text = level.ToString() + " x " + numPerUpgrade + "/s";
         bool canBuy = gameManager.countValue >= CalculatePrice();
@@ -57,6 +57,7 @@ public class StoreUpgrade : MonoBehaviour
 
         ingredientName.text = isPurchased ? ingredient : "???";
     }
+    */
 
     //Function that does the math for calculating the upgrade price
     int CalculatePrice()
