@@ -8,7 +8,7 @@ using TMPro;
 public class UiManager : MonoBehaviour
 {
     public RectTransform upgrades , multipliers , ingredients,buttonUpg,buttonMul,buttonIng,buttonExi;
-    private bool cond = true;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
