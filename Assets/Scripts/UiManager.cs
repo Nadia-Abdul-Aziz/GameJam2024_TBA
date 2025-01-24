@@ -54,35 +54,5 @@ public class UiManager : MonoBehaviour
 
     }
 
-    public void enterButton(){
-        if(cond == true){
-            upgrades.DOAnchorPos(new Vector2(0,0),0.25f);
-            multipliers.DOAnchorPos(new Vector2(0,0),0.25f);
-            ingredients.DOAnchorPos(new Vector2(0,0),0.25f);
-            buttonUpg.DOAnchorPos(new Vector2(0,0),0.25f);
-            buttonMul.DOAnchorPos(new Vector2(0,0),0.25f);
-            buttonIng.DOAnchorPos(new Vector2(0,0),0.25f); 
-            cond=false;
-        }
-
-        if(cond == false){
-            upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
-            multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
-            ingredients.DOAnchorPos(new Vector2(-300,0),0.25f);
-            buttonUpg.DOAnchorPos(new Vector2(-600,0),0.25f);
-            buttonMul.DOAnchorPos(new Vector2(-600,0),0.25f);
-            buttonIng.DOAnchorPos(new Vector2(-600,0),0.25f);
-            cond=true;
-        }
-
-    }
-
-
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }
