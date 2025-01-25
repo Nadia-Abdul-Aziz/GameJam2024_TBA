@@ -21,11 +21,11 @@ public class GameManager : MonoBehaviour
     bool isRotated = false;
     public float countValue = 0;
     float nextTimeCheck = 1;
-    float incomePerSecond = 0;
+    public float incomePerSecond = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
-        IncreaseAndDisplay();
+        displayNumber();
     }
 
     void Update(){
@@ -36,13 +36,14 @@ public class GameManager : MonoBehaviour
     }
 
     void IdleIncome(){
-        float income = 0;
-        for (int i = 0; i < storeUpgrades.Length; i++){
+         float income = 0;
+        for (int i = 0; i < 6; i++){
             income += (storeUpgrades[i].IncomePerSecond())*(multipliers[i].CummulativeMultiplier());
-            //storeUpgrades.UpdateUI();
         }
+        income += storeUpgrades[6].IncomePerSecond();
+        income += storeUpgrades[7].IncomePerSecond();
         countValue += (income/updatesPerSecond);
-        incomePerSecond = income;
+        displayNumber();
     }
 
     // Funciton that is called on click of the cauldron, increases the counter and executes the animation

@@ -60,7 +60,7 @@ public class StoreUpgrade : MonoBehaviour
         ingredientImage.color = isPurchased ? Color.white : Color.black;
         ingredientName.text = isPurchased ? ingredient : "???";
         ingredientNameDesc.text = isPurchased ? ingredient : "???";
-        ingredientDesc.text = isPurchased ? ingredientDesc : "???";
+        ingredientDescTxt.text = isPurchased ? ingredientDesc : "???";
     }
     
 

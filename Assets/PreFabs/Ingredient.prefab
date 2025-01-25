@@ -275,7 +275,9 @@ MonoBehaviour:
   upgradeButton: {fileID: 5374455753086154760}
   ingredientImage: {fileID: 5298510625605403149}
   ingredientName: {fileID: 4881726717846448583}
-  ingredientNameDesc: {fileID: 0}
+  ingredientNameDesc: {fileID: 5568417002483490540}
+  ingredientDescTxt: {fileID: 4331732522160446285}
+  ingredientDesc: 
   startPrice: 20
   numPerUpgrade: 0.1
   ingredient: 
@@ -470,6 +472,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4331732522160446285 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8380253904428967444, guid: 13b061e165c1da741ad1da16172a3174, type: 3}
+  m_PrefabInstance: {fileID: 5211160931147513177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5568417002483490540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 366830627455427509, guid: 13b061e165c1da741ad1da16172a3174, type: 3}
+  m_PrefabInstance: {fileID: 5211160931147513177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8482941093569530850 stripped
