@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class load : MonoBehaviour
@@ -6,7 +7,12 @@ public class load : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        GameObject[] buttonSound = GameObject.FindGameObjectsWithTag("button");
+        if (buttonSound.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
     void Start()
     {
