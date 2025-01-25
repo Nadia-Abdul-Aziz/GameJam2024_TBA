@@ -50,13 +50,16 @@ public class StoreUpgrade : MonoBehaviour
     //  Updates both price and effect of the upgrade on the upgrade button
     // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
     public void UpdateIngredientUI() {
+        //changes elements in dessc tab
         upgradePrice.text = "Cost: " + CalculatePrice().ToString();
         incomePerSecond.text = numPerUpgrade + "   /s";
 
+        //checks if the player has enough to buy, if yes, makes the button interactable
         bool canBuy = gameManager.countValue >= CalculatePrice();
         upgradeButton.interactable = canBuy;
 
-        bool isPurchased = level <= 1 || gameManager.countValue >= CalculatePrice();
+        //
+        bool isPurchased = level >= 1 | gameManager.countValue >= CalculatePrice();
         ingredientImage.color = isPurchased ? Color.white : Color.black;
         ingredientName.text = isPurchased ? ingredient : "???";
         ingredientNameDesc.text = isPurchased ? ingredient : "???";
