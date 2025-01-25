@@ -28,7 +28,7 @@ public class MultiplierManagement : MonoBehaviour
     void Start()
     {
         currentPrice = multiplierStartPrice;
-        UpgradeMultiplierUI();
+        UpdateMultiplierUI();
         multiplierValueTxt.text = "x2 " + linkedIngredientName;
     }
 
@@ -37,17 +37,17 @@ public class MultiplierManagement : MonoBehaviour
         if (purchaseMultiplierPossible){
             CalculateMultiplierPrice();
             multiplierLevel++;
-            UpgradeMultiplierUI();
+            UpdateMultiplierUI();
         }
     }
 
-    public void UpgradeMultiplierUI() {
+    public void UpdateMultiplierUI() {
         multiplierPriceTxt.text = "Cost: " + currentPrice.ToString();
         
         bool canBuyMultiplier = gameManager.countValue >= currentPrice;
         multiplierButton.interactable = canBuyMultiplier;
 
-        bool MultiplerIsPurchased = multiplierLevel <= 1 || gameManager.countValue >= currentPrice;
+        bool MultiplerIsPurchased = multiplierLevel >= 1 | gameManager.countValue >= currentPrice;
         multiplierImage.color = MultiplerIsPurchased ? Color.white : Color.black;
         multiplierNameTxt.text = MultiplerIsPurchased ? multiplierName : "???";
         multiplierNameDesc.text = MultiplerIsPurchased ? multiplierName : "???";

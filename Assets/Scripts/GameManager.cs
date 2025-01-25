@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
         income += storeUpgrades[6].IncomePerSecond();
         income += storeUpgrades[7].IncomePerSecond();
         countValue += (income/updatesPerSecond);
+        incomePerSecond = income;
         displayNumber();
     }
 
@@ -55,6 +56,12 @@ public class GameManager : MonoBehaviour
         RotateCauldron();
 
         displayNumber();
+        for (int i = 0; i < 6; i++){
+            storeUpgrades[i].UpdateIngredientUI();
+        }
+        for (int i = 0; i < 4; i++){
+            multipliers[i].UpdateMultiplierUI();
+        }
     }
 
     //Function that pops back the cauldron
