@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MultiplierManagement : MonoBehaviour
 {
     [SerializeField] Text multiplierPriceTxt;
-    [SerializeField] Text currentMultiplierTxt;
+    [SerializeField] string linkedIngredientName;
+    [SerializeField] Text multiplierValueTxt;
     [SerializeField] Button multiplierButton;
     [SerializeField] Image multiplierImage;
     [SerializeField] Text multiplierNameTxt;
+    [SerializeField] TMP_Text multiplierNameDesc;
+    [SerializeField] Text multiplierDescTxt;
+    [SerializeField] string multiplierDesc;
 
     public int multiplierStartPrice = 100;
     public int multiplierValue = 2;
@@ -23,13 +28,8 @@ public class MultiplierManagement : MonoBehaviour
     void Start()
     {
         currentPrice = multiplierStartPrice;
-        //UpdateUI;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        UpgradeMultiplierUI();
+        multiplierValueTxt.text = "x2 " + linkedIngredientName;
     }
 
     public void buyMultiplier(){
@@ -37,8 +37,21 @@ public class MultiplierManagement : MonoBehaviour
         if (purchaseMultiplierPossible){
             CalculateMultiplierPrice();
             multiplierLevel++;
-            //UpdateUI();
+            UpgradeMultiplierUI();
         }
+    }
+
+    public void UpgradeMultiplierUI() {
+        multiplierPriceTxt.text = "Cost: " + currentPrice.ToString();
+        
+        bool canBuyMultiplier = gameManager.countValue >= currentPrice;
+        multiplierButton.interactable = canBuyMultiplier;
+
+        bool MultiplerIsPurchased = multiplierLevel <= 1 || gameManager.countValue >= currentPrice;
+        multiplierImage.color = MultiplerIsPurchased ? Color.white : Color.black;
+        multiplierNameTxt.text = MultiplerIsPurchased ? multiplierName : "???";
+        multiplierNameDesc.text = MultiplerIsPurchased ? multiplierName : "???";
+        multiplierDescTxt.text = MultiplerIsPurchased ? multiplierDesc : "???";
     }
 
     void CalculateMultiplierPrice(){
@@ -46,6 +59,9 @@ public class MultiplierManagement : MonoBehaviour
     }
 
     public int CummulativeMultiplier(){
-        return multiplierValue*multiplierLevel;
+        if (multiplierLevel > 0){
+           return multiplierValue*multiplierLevel; 
+        }
+        return 1;
     }
 }

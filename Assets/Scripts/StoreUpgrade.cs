@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //This script handles the upgrades, their cost and their effect on the "currency per second"
 public class StoreUpgrade : MonoBehaviour
@@ -10,6 +11,9 @@ public class StoreUpgrade : MonoBehaviour
     [SerializeField] Button upgradeButton;
     [SerializeField] Image ingredientImage;
     [SerializeField] Text ingredientName;
+    [SerializeField] TMP_Text ingredientNameDesc;
+    [SerializeField] Text ingredientDescTxt;
+    [SerializeField] string ingredientDesc;
 
 
     // Variables to change in the unity window to be able to reuse the script no matter the cost/effect of the upgrade
@@ -30,7 +34,7 @@ public class StoreUpgrade : MonoBehaviour
     //At start, updates the UI to allow 
     void Start()
     {
-        //UpdateUI();
+        UpdateIngredientUI();
     }
 
     //checks if it's possible to buy the upgrade
@@ -39,25 +43,26 @@ public class StoreUpgrade : MonoBehaviour
         bool purchasePossible = gameManager.PurchasePossible(price);
         if (purchasePossible){
             level++;
-            //UpdateUI();
+            UpdateIngredientUI();
         }
     }
 
     //  Updates both price and effect of the upgrade on the upgrade button
     // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
-    /*
-    public void UpdateUI() {
-        upgradePrice.text = CalculatePrice().ToString();
-        incomePerSecond.text = level.ToString() + " x " + numPerUpgrade + "/s";
+    public void UpdateIngredientUI() {
+        upgradePrice.text = "Cost: " + CalculatePrice().ToString();
+        incomePerSecond.text = numPerUpgrade + "   /s";
+
         bool canBuy = gameManager.countValue >= CalculatePrice();
         upgradeButton.interactable = canBuy;
 
-        bool isPurchased = level <= 1 && gameManager.countValue >= CalculatePrice();
+        bool isPurchased = level <= 1 || gameManager.countValue >= CalculatePrice();
         ingredientImage.color = isPurchased ? Color.white : Color.black;
-
         ingredientName.text = isPurchased ? ingredient : "???";
+        ingredientNameDesc.text = isPurchased ? ingredient : "???";
+        ingredientDescTxt.text = isPurchased ? ingredientDesc : "???";
     }
-    */
+    
 
     //Function that does the math for calculating the upgrade price
     int CalculatePrice()
