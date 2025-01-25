@@ -1,40 +1,13 @@
 fileFormatVersion: 2
-guid: 511e82cfbf439c44abe5362fe38c634b
+guid: c5e25a35555dcc94294b431fa1c5c715
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5786522009231923656
-    second: Bubble 1_pop08_0
+      213: 6605841240130988651
+    second: merwitch2_0
   - first:
-      213: -3833682999284792293
-    second: Bubble 1_pop08_1
-  - first:
-      213: 209463318801621364
-    second: Bubble 1_pop08_2
-  - first:
-      213: -5156271321693970406
-    second: Bubble 1_pop08_3
-  - first:
-      213: -1883947086398321037
-    second: Bubble 1_pop08_4
-  - first:
-      213: -6883809890475940206
-    second: Bubble 1_pop08_5
-  - first:
-      213: -3615721747390954587
-    second: Bubble 1_pop08_6
-  - first:
-      213: -2128148972250724339
-    second: Bubble 1_pop08_7
-  - first:
-      213: 5604161327055610474
-    second: Bubble 1_pop08_8
-  - first:
-      213: 204673625301219096
-    second: Bubble 1_pop08_9
-  - first:
-      213: 2091523187134294671
-    second: Bubble 1_pop08_10
+      213: 8319473789008738132
+    second: merwitch2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -208,23 +181,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble 1_pop08_0
+      name: merwitch2_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 25
-        width: 150
-        height: 150
+        x: 0
+        y: 0
+        width: 832
+        height: 602
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83660c214e422bfa0800000000000000
-      internalID: -5786522009231923656
+      spriteID: b6a22a0db99acab50800000000000000
+      internalID: 6605841240130988651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merwitch2_1
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 495
+        width: 1670
+        height: 2477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457f9082555b47370800000000000000
+      internalID: 8319473789008738132
       vertices: []
       indices: 
       edges: []
@@ -233,7 +228,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2cbab4dbf99108846a852388aa451700
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -242,18 +237,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble 1_pop08_0: -5786522009231923656
-      Bubble 1_pop08_1: -3833682999284792293
-      Bubble 1_pop08_10: 2091523187134294671
-      Bubble 1_pop08_2: 209463318801621364
-      Bubble 1_pop08_3: -5156271321693970406
-      Bubble 1_pop08_4: -1883947086398321037
-      Bubble 1_pop08_5: -6883809890475940206
-      Bubble 1_pop08_6: -3615721747390954587
-      Bubble 1_pop08_7: -2128148972250724339
-      Bubble 1_pop08_8: 5604161327055610474
-      Bubble 1_pop08_9: 204673625301219096
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
