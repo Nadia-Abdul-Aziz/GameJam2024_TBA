@@ -4,15 +4,15 @@ using System.Collections;
 
 public class ImageFader : MonoBehaviour
 {
-    public Image imageToFade;  // Reference to the Image component
-    public float fadeDuration = 2f;  // Duration of the fade
-    public float delayBetweenFades = 1f;  // Delay between fade in and fade out
+    public Image imageToFade;
+    public float fadeDuration = 2f;
+    public float delayBetweenFades = 1f;
 
     private void Start()
     {
         if (imageToFade == null)
         {
-            imageToFade = GetComponent<Image>();  // Assign the Image component if not set
+            imageToFade = GetComponent<Image>();
         }
         StartCoroutine(FadeInOut());
     }
@@ -22,10 +22,10 @@ public class ImageFader : MonoBehaviour
         while (true)
         {
             yield return StartCoroutine(FadeImage(1f));  // Fade in (alpha = 1)
-            yield return new WaitForSeconds(delayBetweenFades);  // Wait for a moment
+            yield return new WaitForSeconds(delayBetweenFades);  // Wait 
 
-            yield return StartCoroutine(FadeImage(0f));  // Fade out (alpha = 0)
-            yield return new WaitForSeconds(delayBetweenFades);  // Wait for a moment
+            yield return StartCoroutine(FadeImage(0f));  // Fade out (alpha = 0) STARTING VALUE!!
+            yield return new WaitForSeconds(delayBetweenFades);  // Wait 
         }
     }
 
@@ -42,7 +42,6 @@ public class ImageFader : MonoBehaviour
             yield return null;
         }
 
-        // Ensure the final alpha is exactly the target alpha
         imageToFade.color = new Color(imageToFade.color.r, imageToFade.color.g, imageToFade.color.b, targetAlpha);
     }
 }

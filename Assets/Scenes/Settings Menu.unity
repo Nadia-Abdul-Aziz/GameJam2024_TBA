@@ -180,15 +180,15 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 43861eb5c46271843b81b09528706790, type: 2}
-  m_sharedMaterial: {fileID: -7385862130304984560, guid: 43861eb5c46271843b81b09528706790, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
+  m_sharedMaterial: {fileID: -4988142137920715706, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292138196
+  m_fontColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -211,12 +211,12 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 17
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: 0.61
+  m_wordSpacing: -20.45
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -1085,15 +1085,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: START
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
+  m_sharedMaterial: {fileID: -4988142137920715706, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292138196
+  m_fontColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 655653480}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.4
 --- !u!114 &655653480
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 732061932}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.8
 --- !u!114 &732061932
@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 823209898}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.2
 --- !u!114 &823209898
@@ -2165,7 +2165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 847115758}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.2
 --- !u!114 &847115758
@@ -2256,7 +2256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 864700246}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.6
 --- !u!114 &864700246
@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1028157687}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.4
 --- !u!114 &1028157687
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1091183849}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 1
 --- !u!114 &1091183849
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1118840481}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.8
 --- !u!114 &1118840481
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1384973632}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.8
 --- !u!114 &1384973632
@@ -3212,7 +3212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1496871718}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.6
 --- !u!114 &1496871718
@@ -3476,6 +3476,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1804000224}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1615948039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3585,15 +3597,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
+  m_sharedMaterial: {fileID: -4988142137920715706, guid: a51a866b5a10a5a44bad5f4c1ad2640e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294769919
-  m_fontColor: {r: 1, g: 0.98679245, b: 0.98679245, a: 1}
+    rgba: 4292927712
+  m_fontColor: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3879,7 +3891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1675487335}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.2
 --- !u!114 &1675487335
@@ -3920,6 +3932,148 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675487332}
   m_CullTransparentMesh: 1
+--- !u!1 &1804000223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804000225}
+  - component: {fileID: 1804000224}
+  - component: {fileID: 1804000226}
+  m_Layer: 0
+  m_Name: mainSound
+  m_TagString: music
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1804000224
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804000223}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 62ca9d0dfffd6494482c7a06c4f93920, type: 3}
+  m_Resource: {fileID: 8300000, guid: 62ca9d0dfffd6494482c7a06c4f93920, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1804000225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804000223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 908.902, y: 503.64035, z: -5.6433573}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804000226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804000223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6043b343d3f9aaa499f5917acd9146bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1845233400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,7 +4261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1853799369}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.8
 --- !u!114 &1853799369
@@ -4198,7 +4352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1962542146}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.8
 --- !u!114 &1962542146
@@ -4289,7 +4443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 1970981257}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.4
 --- !u!114 &1970981257
@@ -4380,7 +4534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 2054507063}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.6
 --- !u!114 &2054507063
@@ -4471,7 +4625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 2058203916}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 0.6
 --- !u!114 &2058203916
@@ -4862,7 +5016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 2144787488}
+  imageToFade: {fileID: 0}
   fadeDuration: 3
   delayBetweenFades: 1
 --- !u!114 &2144787488
@@ -4914,3 +5068,4 @@ SceneRoots:
   - {fileID: 785593980}
   - {fileID: 1297298198}
   - {fileID: 120022052}
+  - {fileID: 1804000225}
