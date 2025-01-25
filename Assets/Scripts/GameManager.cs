@@ -17,11 +17,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject cauldron;
     [SerializeField] StoreUpgrade[] storeUpgrades;
     [SerializeField] MultiplierManagement[] multipliers;
+    [SerializeField] BubbleAnimation[] bubbles;
     [SerializeField] int updatesPerSecond = 5;
     bool isRotated = false;
     public float countValue = 0;
     float nextTimeCheck = 1;
     public float incomePerSecond = 0;
+    //int previousBubblePop = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -54,6 +56,10 @@ public class GameManager : MonoBehaviour
         //initial pop of cauldron
         cauldron.transform.DOBlendableScaleBy(new Vector3(0.05f, 0.05f, 0.05f), 0.05f).OnComplete(CauldronScaleBack);
         RotateCauldron();
+
+        //Bubble pop
+        //randomBubblePop(previousBubblePop);
+        //bubbles[previousBubblePop].AnimationPlay();
 
         displayNumber();
         for (int i = 0; i < 6; i++){
@@ -101,4 +107,18 @@ public class GameManager : MonoBehaviour
         counter.text = Mathf.RoundToInt(countValue).ToString();
         income.text = incomePerSecond.ToString() + "/s";
     }
+
+    //function to randomly decide which bubble pops
+    /*
+    void randomBubblePop(int previous){
+        Random bubbleNumber = new Random();
+        float newFloat = bubbleNumber.Range(0,bubbles.Length);
+        int newInt = Mathf.RoundToInt(newFloat);
+        while (newInt == previousBubblePop){
+            newInt = bubbleNumber.Range(0,bubbles.Length);
+        }
+
+        previousBubblePop = newInt;
+    }
+    */
 }

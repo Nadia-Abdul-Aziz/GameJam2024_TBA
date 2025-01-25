@@ -181,12 +181,12 @@ TextureImporter:
       name: Bubble 1_pop00_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 47
-        width: 109
-        height: 109
+        x: 25
+        y: 25
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 573e499fa30b5004aa53b1d61c6dd596
     internalID: 0
     vertices: []
     indices: 
