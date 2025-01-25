@@ -16,15 +16,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text income;
     [SerializeField] GameObject cauldron;
     [SerializeField] StoreUpgrade[] storeUpgrades;
+    [SerializeField] MultiplierManagement[] multipliers;
     [SerializeField] int updatesPerSecond = 5;
     bool isRotated = false;
     public float countValue = 0;
     float nextTimeCheck = 1;
-    float incomePerSecond = 0;
+    public float incomePerSecond = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
-        IncreaseAndDisplay();
+        displayNumber();
     }
 
     void Update(){
@@ -35,13 +36,15 @@ public class GameManager : MonoBehaviour
     }
 
     void IdleIncome(){
-        float income = 0;
-        foreach (var StoreUpgrade in storeUpgrades){
-           income += StoreUpgrade.IncomePerSecond(); 
-           StoreUpgrade.UpdateUI();
+         float income = 0;
+        for (int i = 0; i < 6; i++){
+            income += (storeUpgrades[i].IncomePerSecond())*(multipliers[i].CummulativeMultiplier());
         }
+        income += storeUpgrades[6].IncomePerSecond();
+        income += storeUpgrades[7].IncomePerSecond();
         countValue += (income/updatesPerSecond);
         incomePerSecond = income;
+        displayNumber();
     }
 
     // Funciton that is called on click of the cauldron, increases the counter and executes the animation
@@ -53,21 +56,27 @@ public class GameManager : MonoBehaviour
         RotateCauldron();
 
         displayNumber();
+        for (int i = 0; i < 6; i++){
+            storeUpgrades[i].UpdateIngredientUI();
+        }
+        for (int i = 0; i < 4; i++){
+            multipliers[i].UpdateMultiplierUI();
+        }
+    }
+
+    //Function that pops back the cauldron
+    void CauldronScaleBack() {
+        cauldron.transform.DOBlendableScaleBy(new Vector3(-0.05f, -0.05f, -0.05f), 0.05f);
     }
 
     //Function that verifies if you can pay the upgrade
-    public bool PurchaseUpgrade(int cost) {
+    public bool PurchasePossible(int cost) {
         if (countValue >= cost) {
             countValue -= cost;
             displayNumber();
             return true;
         }
         return false;
-    }
-
-    //Function that pops back the cauldron
-    void CauldronScaleBack() {
-        cauldron.transform.DOBlendableScaleBy(new Vector3(-0.05f, -0.05f, -0.05f), 0.05f);
     }
 
     //Rotates the cauldron and back every other click, allowing a back and forth motion
@@ -82,9 +91,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //increases count value, called in the increaseAndDisplay() function
+    //increases count value according to current multiplier, called in the increaseAndDisplay() function
     void Increase() {
-        countValue++;
+        countValue += multipliers[0].CummulativeMultiplier();
     }
 
     //Changes the value of the counter in the UI. Called in Start() and increaseAndDisplay()

@@ -1,15 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //This script handles the upgrades, their cost and their effect on the "currency per second"
 public class StoreUpgrade : MonoBehaviour
 {
     //Fields to link through Unity interface to be able to update the text on the upgrade buttons
-    [SerializeField] Text priceValue;
-    [SerializeField] Text income;
+    [SerializeField] Text upgradePrice;
+    [SerializeField] Text incomePerSecond;
     [SerializeField] Button upgradeButton;
     [SerializeField] Image ingredientImage;
     [SerializeField] Text ingredientName;
+    [SerializeField] TMP_Text ingredientNameDesc;
+    [SerializeField] Text ingredientDescTxt;
+    [SerializeField] string ingredientDesc;
 
 
     // Variables to change in the unity window to be able to reuse the script no matter the cost/effect of the upgrade
@@ -30,32 +34,38 @@ public class StoreUpgrade : MonoBehaviour
     //At start, updates the UI to allow 
     void Start()
     {
-        UpdateUI();
+        UpdateIngredientUI();
     }
 
-    //
+    //checks if it's possible to buy the upgrade
     public void BuyUpgrade(){
         int price = CalculatePrice();
-        bool purchasePossible = gameManager.PurchaseUpgrade(price);
+        bool purchasePossible = gameManager.PurchasePossible(price);
         if (purchasePossible){
             level++;
-            UpdateUI();
+            UpdateIngredientUI();
         }
     }
 
     //  Updates both price and effect of the upgrade on the upgrade button
-    public void UpdateUI()
-    {
-        priceValue.text = CalculatePrice().ToString();
-        income.text = level.ToString() + " x " + numPerUpgrade + "/s";
+    // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
+    public void UpdateIngredientUI() {
+        //changes elements in dessc tab
+        upgradePrice.text = "Cost: " + CalculatePrice().ToString();
+        incomePerSecond.text = numPerUpgrade + "   /s";
+
+        //checks if the player has enough to buy, if yes, makes the button interactable
         bool canBuy = gameManager.countValue >= CalculatePrice();
         upgradeButton.interactable = canBuy;
 
-        bool isPurchased = level <= 1 && gameManager.countValue >= CalculatePrice();
+        //
+        bool isPurchased = level >= 1 | gameManager.countValue >= CalculatePrice();
         ingredientImage.color = isPurchased ? Color.white : Color.black;
-
         ingredientName.text = isPurchased ? ingredient : "???";
+        ingredientNameDesc.text = isPurchased ? ingredient : "???";
+        ingredientDescTxt.text = isPurchased ? ingredientDesc : "???";
     }
+    
 
     //Function that does the math for calculating the upgrade price
     int CalculatePrice()
