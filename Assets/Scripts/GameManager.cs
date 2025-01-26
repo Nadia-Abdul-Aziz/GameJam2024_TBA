@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     bool isRotated = false;
     public float countValue = 0;
     float nextTimeCheck = 1;
-    float mermanTimeCheck = 2;
+    // commented for now
+    // float mermanTimeCheck = 2;
     public float incomePerSecond = 0;
     //int previousBubblePop = 0;
 

@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//Copied and pasted this from the previous button script, removed comments
+//Music in the main page
 public class mainSoundManager : MonoBehaviour
 {
-    [SerializeField] Image musicOn;  // Image for music ON button
-    [SerializeField] Image musicOff; // Image for music OFF button
-    [SerializeField] AudioSource backgroundMusic; // Reference to the background music AudioSource
+    [SerializeField] Image musicOn;
+    [SerializeField] Image musicOff;
+    [SerializeField] AudioSource backgroundMusic;
 
     private bool muted = false;
 
     void Start()
     {
-        // If the muted preference doesn't exist, create it
         if (!PlayerPrefs.HasKey("muted"))
         {
             PlayerPrefs.SetInt("muted", 0);
@@ -22,30 +23,22 @@ public class mainSoundManager : MonoBehaviour
             Load();
         }
 
-        // Update the UI based on the mute status
         UpdateButton();
 
-        // Set the audio source's volume based on muted status
         backgroundMusic.mute = muted;
     }
 
-    // Called when the mute/unmute button is pressed
     public void OnButtonPress()
     {
-        // Toggle the mute status
         muted = !muted;
 
-        // Mute or unmute the background music
         backgroundMusic.mute = muted;
 
-        // Save the current mute state
         Save();
 
-        // Update the UI
         UpdateButton();
     }
 
-    // Update the button images based on the mute state
     private void UpdateButton()
     {
         if (muted)
@@ -60,13 +53,11 @@ public class mainSoundManager : MonoBehaviour
         }
     }
 
-    // Load the mute state from PlayerPrefs
     private void Load()
     {
         muted = PlayerPrefs.GetInt("muted") == 1;
     }
 
-    // Save the current mute state to PlayerPrefs
     private void Save()
     {
         PlayerPrefs.SetInt("muted", muted ? 1 : 0);
