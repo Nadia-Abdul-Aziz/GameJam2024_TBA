@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         float income = 0;
         for (int i = 0; i < 6; i++)
         {
-            income += (storeUpgrades[i].IncomePerSecond()) * (multipliers[i].CummulativeMultiplier());
+            income += (storeUpgrades[i].IncomePerSecond()) * (multipliers[i].currentMultiplierValue);
         }
         income += storeUpgrades[6].IncomePerSecond();
         income += storeUpgrades[7].IncomePerSecond();
@@ -117,7 +117,12 @@ public class GameManager : MonoBehaviour
     //increases count value according to current multiplier, called in the increaseAndDisplay() function
     void Increase()
     {
-        countValue += multipliers[0].CummulativeMultiplier();
+        if (multipliers[0].currentMultiplierValue > 0){
+            countValue += multipliers[0].currentMultiplierValue;
+        }else{
+            countValue += 1;
+        }
+        
     }
 
     //Changes the value of the counter in the UI. Called in Start() and increaseAndDisplay()

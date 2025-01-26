@@ -16,6 +16,7 @@ public class MultiplierManagement : MonoBehaviour
 
     public int multiplierStartPrice = 100;
     public int multiplierValue = 2;
+    public int currentMultiplierValue = 1;
     public string multiplierName;
     public int[] multiplierTable = { 5, 10, 100, 100, 100, 1000, 1000, 1000, 1000, 10000, 10000, 10000, 10000, 10000 };
 
@@ -63,13 +64,9 @@ public class MultiplierManagement : MonoBehaviour
         currentPrice *= multiplierTable[multiplierLevel];
     }
 
-    public float CummulativeMultiplier()
+    public void CummulativeMultiplier()
     {
-        if (multiplierLevel > 0)
-        {
-            return multiplierValue * multiplierLevel;
-        }
-        return 1;
+        currentMultiplierValue = multiplierValue ^ multiplierLevel;
     }
 
     public float CurrentMultiplier()
@@ -90,7 +87,7 @@ public class MultiplierManagement : MonoBehaviour
         PlayerPrefs.SetInt("multiplierPrice_" + multiplierName, currentPrice);
 
 
-        PlayerPrefs.SetInt("multiplierValue_" + multiplierName, multiplierValue);
+        PlayerPrefs.SetInt("multiplierValue_" + multiplierName, currentMultiplierValue);
 
 
         PlayerPrefs.Save();
