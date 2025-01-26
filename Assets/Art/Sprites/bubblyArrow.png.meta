@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubblyArrow_0: -1635010756168628156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

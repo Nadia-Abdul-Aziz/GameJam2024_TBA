@@ -127,12 +127,25 @@ public class GameManager : MonoBehaviour
         income.text = incomePerSecond.ToString() + "/s";
     }
 
-    public void Save(){
-        PlayerPrefs.SetFloat("counter",countValue);
+    public void Save()
+    {
+        PlayerPrefs.SetFloat("counter", countValue);
+        PlayerPrefs.SetFloat("incomePerSecond", incomePerSecond);
+        for (int i = 0; i < multipliers.Length; i++)
+        {
+            float loadedMultiplier = PlayerPrefs.GetFloat("multiplier_" + i, 1); 
+            multipliers[i].SetMultiplier(loadedMultiplier); // gotta go make this again
+        }
+
+        PlayerPrefs.Save();
+
     }
 
-    public void Load(){
+    public void Load()
+    {
         countValue = PlayerPrefs.GetFloat("counter");
+        incomePerSecond = PlayerPrefs.GetFloat("incomePerSecond", 0);
+        displayNumber();
     }
 
     //function to randomly decide which bubble pops
