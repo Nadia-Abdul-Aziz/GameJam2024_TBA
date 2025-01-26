@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      merwitch - outline_0: -797340117742073066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
