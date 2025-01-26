@@ -15,6 +15,12 @@ public class StoreUpgrade : MonoBehaviour
     [SerializeField] Text ingredientDescTxt;
     [SerializeField] string ingredientDesc;
 
+    [SerializeField] TMP_Text listNameAndQuantity;
+    [SerializeField] TMP_Text listMultiplier;
+    [SerializeField] TMP_Text listTotalEffect;
+    [SerializeField] Image listIcon;
+    [SerializeField] MultiplierManagement multiplier;
+
 
     // Variables to change in the unity window to be able to reuse the script no matter the cost/effect of the upgrade
     public int startPrice = 20;
@@ -64,8 +70,22 @@ public class StoreUpgrade : MonoBehaviour
         ingredientName.text = isPurchased ? ingredient : "???";
         ingredientNameDesc.text = isPurchased ? ingredient : "???";
         ingredientDescTxt.text = isPurchased ? ingredientDesc : "???";
+        UpgradeListUI(isPurchased);
     }
     
+    //Function to update the list
+    public void UpgradeListUI(bool isPurchased){
+        listIcon.color = isPurchased ? Color.white : Color.black;
+        listNameAndQuantity.text = isPurchased ? (ingredient + " x" + level.ToString()) : "???";
+        listMultiplier.text = isPurchased ? ("Multiplier: x" + multiplier.multiplierLevel) : "???";
+        listTotalEffect.text = isPurchased ? TotalEffectCalculator() : "No Effect \n0 /s";
+    }
+
+    //
+    string TotalEffectCalculator(){
+        float total = numPerUpgrade*level*multiplier.multiplierLevel;
+        return numPerUpgrade.ToString() + " x " + level.ToString() + " x " + multiplier.multiplierLevel.ToString() + "\n Total: +" + total.ToString() + " /s";
+    }
 
     //Function that does the math for calculating the upgrade price
     int CalculatePrice()
