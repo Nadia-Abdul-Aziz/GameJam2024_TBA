@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cauldron-02_0: 4534558070046983460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
