@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
     void displayNumber()
     {
         counter.text = Mathf.RoundToInt(countValue).ToString();
-        income.text = incomePerSecond.ToString() + "/s";
+        income.text = incomePerSecond.ToString() + "      /s";
     }
 
     public void Save(){
