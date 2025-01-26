@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shipwreck_0: 5551047795832300603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
