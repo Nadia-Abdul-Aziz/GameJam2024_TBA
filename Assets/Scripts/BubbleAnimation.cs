@@ -1,8 +1,10 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class BubbleAnimation : MonoBehaviour
 {
     [SerializeField] Animation BubblePop;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,4 +23,5 @@ public class BubbleAnimation : MonoBehaviour
         animator.Play(BubblePop);
     }
     */
+
 }
