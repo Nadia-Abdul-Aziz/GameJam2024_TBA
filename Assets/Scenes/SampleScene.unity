@@ -224,7 +224,8 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierDesc
-      value: '[desc]'
+      value: A Pufferfish a day keeps the bad breath away! Makes Pufferfish more
+        effective
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierName
@@ -2916,7 +2917,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: "I wouldn\u2019t want to be on the receiving end of this! Gives 0.5
+        bubbles per second, per item"
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
@@ -4605,7 +4607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1296911822630207560, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: gameManager
@@ -4613,7 +4615,8 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierDesc
-      value: '[desc]'
+      value: Seems like your bones are getting stronger! A good substitute for milk.
+        Makes fishbones more effective
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierName
@@ -5170,7 +5173,8 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierDesc
-      value: '[desc]'
+      value: Everything's better with an extra pair of hands. Or claw. Makes Crab
+        Claw more effective
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierName
@@ -6473,7 +6477,7 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierDesc
-      value: '[desc]'
+      value: Look what flossing everyday can do to you! Makes Shark Tooth more effective
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierName
@@ -7335,7 +7339,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: Is every blink a wink when you have one eye? Gives 10 bubbles per second,
+        per item
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
@@ -9998,7 +10003,7 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierDesc
-      value: '[desc]'
+      value: A clean home is a clean mind. Makes Turtle Shell more effective
       objectReference: {fileID: 0}
     - target: {fileID: 1539101156724427273, guid: 9c7e92a17f377cc468083920cf47ebbd, type: 3}
       propertyPath: multiplierName
@@ -12997,7 +13002,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: A delicacy for some, a last meal for others. Gives 40 bubbles per second,
+        per item
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
@@ -13389,7 +13395,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: Seems like the hare was a sore loser. Gives 100 bubbles per second,
+        per item
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
@@ -13809,7 +13816,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: A pinch of crab for that snappy flavour. Gives 4 bubbles per second,
+        per item
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
@@ -14553,7 +14561,8 @@ PrefabInstance:
       objectReference: {fileID: 1505557602}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: ingredientDesc
-      value: '[desc]'
+      value: Marinated fishbones.... it may not be the best, but it'll give you some
+        strength!  \nGives 0.1 bubbles per second, per item
       objectReference: {fileID: 0}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: listMultiplier
