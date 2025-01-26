@@ -21,7 +21,7 @@ public class MultiplierManagement : MonoBehaviour
 
     public GameManager gameManager;
 
-    int multiplierLevel = 0;
+    public int multiplierLevel = 0;
     int currentPrice;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
