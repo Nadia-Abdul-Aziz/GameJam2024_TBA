@@ -18,22 +18,30 @@ public class GameManager : MonoBehaviour
     [SerializeField] StoreUpgrade[] storeUpgrades;
     [SerializeField] MultiplierManagement[] multipliers;
     [SerializeField] BubbleAnimation[] bubbles;
-    [SerializeField] int updatesPerSecond = 5;
+    [SerializeField] int updatesPerSecond = 10;
     bool isRotated = false;
     public float countValue = 0;
     float nextTimeCheck = 1;
+    float mermanTimeCheck = 2;
     public float incomePerSecond = 0;
     //int previousBubblePop = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
         displayNumber();
+        MermanAnimation1();
     }
 
     void Update(){
         if (nextTimeCheck < Time.time) {
             IdleIncome();
             nextTimeCheck = Time.time + (1f/updatesPerSecond);
+            for (int i = 0; i < 6; i++){
+            storeUpgrades[i].UpdateIngredientUI();
+            }
+            for (int i = 0; i < 4; i++){
+                multipliers[i].UpdateMultiplierUI();
+            }
         }
     }
 
@@ -62,12 +70,6 @@ public class GameManager : MonoBehaviour
         //bubbles[previousBubblePop].AnimationPlay();
 
         displayNumber();
-        for (int i = 0; i < 6; i++){
-            storeUpgrades[i].UpdateIngredientUI();
-        }
-        for (int i = 0; i < 4; i++){
-            multipliers[i].UpdateMultiplierUI();
-        }
     }
 
     //Function that pops back the cauldron
