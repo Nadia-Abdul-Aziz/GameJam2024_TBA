@@ -13,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - ui2
   - 
   - 
   - 
@@ -49,8 +49,15 @@ TagManager:
   - name: Cauldron
     uniqueID: 795812319
     locked: 0
+  - name: bubble
+    uniqueID: 1908520069
+    locked: 0
   - name: UI
+    uniqueID: 1290241921
+    locked: 0
+  - name: UI2
     uniqueID: 1290241921
     locked: 0
   m_RenderingLayers:
   - Default
+  - Layer 1
