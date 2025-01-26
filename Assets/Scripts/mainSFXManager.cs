@@ -9,6 +9,13 @@ public class mainSFXManager : MonoBehaviour
     [SerializeField] Image sfxOn;
     [SerializeField] Image sfxOff;
     [SerializeField] AudioSource sfx1;
+    [SerializeField] AudioSource sfx2;
+    [SerializeField] AudioSource sfx3;
+    [SerializeField] AudioSource sfx4;
+    [SerializeField] AudioSource sfx5;
+    [SerializeField] AudioSource sfx6;
+    [SerializeField] AudioSource sfx7;
+    [SerializeField] AudioSource sfx8;
 
     private bool muted = false;
 
@@ -39,6 +46,13 @@ public class mainSFXManager : MonoBehaviour
 
 
         sfx1.mute = muted;
+        sfx2.mute = muted;
+        sfx3.mute = muted;
+        sfx4.mute = muted;
+        sfx5.mute = muted;
+        sfx6.mute = muted;
+        sfx7.mute = muted;
+        sfx8.mute = muted;
 
 
         Save();
