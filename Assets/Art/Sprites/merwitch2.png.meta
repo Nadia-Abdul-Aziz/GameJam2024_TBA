@@ -237,7 +237,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      merwitch2_0: 6605841240130988651
+      merwitch2_1: 8319473789008738132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
