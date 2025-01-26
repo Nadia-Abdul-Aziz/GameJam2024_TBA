@@ -127,6 +127,14 @@ public class GameManager : MonoBehaviour
         income.text = incomePerSecond.ToString() + "/s";
     }
 
+    public void Save(){
+        PlayerPrefs.SetFloat("counter",countValue);
+    }
+
+    public void Load(){
+        countValue = PlayerPrefs.GetFloat("counter");
+    }
+
     //function to randomly decide which bubble pops
     /*
     void randomBubblePop(int previous){
