@@ -4,8 +4,9 @@ using UnityEngine.UI;
 public class sfxManager : MonoBehaviour
 {
     [SerializeField] Image sfxOn;
-    [SerializeField] Image sfxOff; // Image for music OFF button
+    [SerializeField] Image sfxOff; // Images
     [SerializeField] AudioSource sfx1;
+    // Don't need these rn but might change my mind
     // [SerializeField] AudioSource sfx2;
     // [SerializeField] AudioSource sfx3;
     // [SerializeField] AudioSource sfx4;
@@ -20,7 +21,6 @@ public class sfxManager : MonoBehaviour
 
     void Start()
     {
-        // If the muted preference doesn't exist, create it
         if (!PlayerPrefs.HasKey("muted"))
         {
             PlayerPrefs.SetInt("muted", 0);
@@ -50,7 +50,7 @@ public class sfxManager : MonoBehaviour
     // Called when the mute/unmute button is pressed
     public void OnButtonPress()
     {
-        // Toggle the mute status
+        // Toggle mute
         muted = !muted;
 
         // Mute or unmute the background music
@@ -72,7 +72,7 @@ public class sfxManager : MonoBehaviour
         UpdateButton();
     }
 
-    // Update the button images based on the mute state
+    // Update button images based on the mute state
     private void UpdateButton()
     {
         if (muted)
@@ -86,13 +86,13 @@ public class sfxManager : MonoBehaviour
             sfxOff.enabled = false;
         }
     }
-    // Load the mute state from PlayerPrefs
+    // Load mute state from PlayerPrefs
     private void Load()
     {
         muted = PlayerPrefs.GetInt("muted") == 1;
     }
 
-    // Save the current mute state to PlayerPrefs
+    // Save current mute state to PlayerPrefs
     private void Save()
     {
         PlayerPrefs.SetInt("muted", muted ? 1 : 0);

@@ -13,7 +13,7 @@ public class PlayLegacyAnimation : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            anim.Play("BubblePop"); // Replace "BubblePop" with the clip's name if different
+            anim.Play("BubblePop");
         }
     }
 }
