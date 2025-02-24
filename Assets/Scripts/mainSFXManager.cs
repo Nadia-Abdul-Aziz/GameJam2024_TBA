@@ -20,7 +20,7 @@ public class mainSFXManager : MonoBehaviour
     [SerializeField] AudioSource sfx9;
     [SerializeField] AudioSource sfx10;
 
-    //checking if mute
+    //checking if mute, default on
     private bool muted = false;
 
 
