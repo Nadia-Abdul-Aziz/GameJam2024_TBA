@@ -7,58 +7,58 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Image musicOff;
     [SerializeField] AudioSource backgroundMusic;
 
-    private bool muted = false;
+    private bool muted = false; //track if muted, default is music on
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("muted"))
+        if (!PlayerPrefs.HasKey("muted")) //no saved preference
         {
-            PlayerPrefs.SetInt("muted", 0);
-            Load();
+            PlayerPrefs.SetInt("muted", 0); //default setting unmuted
+            Load(); //load default
         }
         else
         {
-            Load();
+            Load(); //load from previous game if it exists
         }
 
 
-        UpdateButton();
-        backgroundMusic.mute = muted;
+        UpdateButton(); //change ui 
+        backgroundMusic.mute = muted; //apply loaded
     }
 
     public void OnButtonPress()
     {
 
-        muted = !muted;
+        muted = !muted; //toggle mute on click
 
-        backgroundMusic.mute = muted;
+        backgroundMusic.mute = muted; //apply new state
 
-        Save();
+        Save(); //self explanatory
 
-        UpdateButton();
+        UpdateButton(); //image
     }
 
-    private void UpdateButton()
+    private void UpdateButton() //change images based on state
     {
-        if (muted)
+        if (muted) //change to off icon
         {
             musicOn.enabled = false;
             musicOff.enabled = true;
         }
-        else
+        else //opposite
         {
             musicOn.enabled = true;
             musicOff.enabled = false;
         }
     }
 
-    private void Load()
+    private void Load() //load whatever state is saved from the previous game
     {
-        muted = PlayerPrefs.GetInt("muted") == 1;
+        muted = PlayerPrefs.GetInt("muted") == 1; // convert int to bool, 1 = true
     }
 
     private void Save()
     {
-        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+        PlayerPrefs.SetInt("muted", muted ? 1 : 0); //convert bool to int
     }
 }

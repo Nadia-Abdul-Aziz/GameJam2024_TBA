@@ -32,38 +32,42 @@ public class mainSoundManager : MonoBehaviour
         backgroundMusic.mute = muted;
     }
 
+    //Toggle status on click
     public void OnButtonPress()
     {
-        muted = !muted;
 
-        backgroundMusic.mute = muted;
+        muted = !muted; //toggle
 
+        backgroundMusic.mute = muted; //Apply the new mute state to the source
+
+
+        //Same thing, saving the state to player preferences
         Save();
-
+        //change ui
         UpdateButton();
     }
 
     private void UpdateButton()
     {
-        if (muted)
+        if (muted) //if mute hide on icon
         {
             musicOn.enabled = false;
             musicOff.enabled = true;
         }
-        else
+        else //opposite
         {
             musicOn.enabled = true;
             musicOff.enabled = false;
         }
     }
 
-    private void Load()
+    private void Load() //loading saved preference
     {
-        muted = PlayerPrefs.GetInt("muted") == 1;
+        muted = PlayerPrefs.GetInt("muted") == 1; //convert into to bool
     }
 
-    private void Save()
+    private void Save() //self explanatory
     {
-        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+        PlayerPrefs.SetInt("muted", muted ? 1 : 0); // Convert bool to int (1 if true, 0 if false) and save
     }
 }
