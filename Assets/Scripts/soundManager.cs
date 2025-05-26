@@ -3,72 +3,62 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] Image musicOn;  // Image for music ON button
-    [SerializeField] Image musicOff; // Image for music OFF button
-    [SerializeField] AudioSource backgroundMusic; // Reference to the background music AudioSource
+    [SerializeField] Image musicOn;
+    [SerializeField] Image musicOff;
+    [SerializeField] AudioSource backgroundMusic;
 
-    private bool muted = false;
+    private bool muted = false; //track if muted, default is music on
 
     void Start()
     {
-        // If the muted preference doesn't exist, create it
-        if (!PlayerPrefs.HasKey("muted"))
+        if (!PlayerPrefs.HasKey("muted")) //no saved preference
         {
-            PlayerPrefs.SetInt("muted", 0);
-            Load();
+            PlayerPrefs.SetInt("muted", 0); //default setting unmuted
+            Load(); //load default
         }
         else
         {
-            Load();
+            Load(); //load from previous game if it exists
         }
 
-        // Update the UI based on the mute status
-        UpdateButton();
 
-        // Set the audio source's volume based on muted status
-        backgroundMusic.mute = muted;
+        UpdateButton(); //change ui 
+        backgroundMusic.mute = muted; //apply loaded
     }
 
-    // Called when the mute/unmute button is pressed
     public void OnButtonPress()
     {
-        // Toggle the mute status
-        muted = !muted;
 
-        // Mute or unmute the background music
-        backgroundMusic.mute = muted;
+        muted = !muted; //toggle mute on click
 
-        // Save the current mute state
-        Save();
+        backgroundMusic.mute = muted; //apply new state
 
-        // Update the UI
-        UpdateButton();
+        Save(); //self explanatory
+
+        UpdateButton(); //image
     }
 
-    // Update the button images based on the mute state
-    private void UpdateButton()
+    private void UpdateButton() //change images based on state
     {
-        if (muted)
+        if (muted) //change to off icon
         {
             musicOn.enabled = false;
             musicOff.enabled = true;
         }
-        else
+        else //opposite
         {
             musicOn.enabled = true;
             musicOff.enabled = false;
         }
     }
 
-    // Load the mute state from PlayerPrefs
-    private void Load()
+    private void Load() //load whatever state is saved from the previous game
     {
-        muted = PlayerPrefs.GetInt("muted") == 1;
+        muted = PlayerPrefs.GetInt("muted") == 1; // convert int to bool, 1 = true
     }
 
-    // Save the current mute state to PlayerPrefs
     private void Save()
     {
-        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
+        PlayerPrefs.SetInt("muted", muted ? 1 : 0); //convert bool to int
     }
 }
