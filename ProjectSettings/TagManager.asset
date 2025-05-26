@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - button
-  - music
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -40,17 +38,8 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
-    uniqueID: 553994563
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Cauldron
-    uniqueID: 795812319
-    locked: 0
-  - name: UI
-    uniqueID: 1290241921
     locked: 0
   m_RenderingLayers:
   - Default

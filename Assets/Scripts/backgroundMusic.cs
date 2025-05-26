@@ -5,6 +5,7 @@ public class BackgroundMusic : MonoBehaviour
 {
     private static BackgroundMusic background;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -15,7 +16,11 @@ public class BackgroundMusic : MonoBehaviour
         }
         else
         {
+
+
             Destroy(gameObject);
+
+
         }
     }
 }

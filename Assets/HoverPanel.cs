@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerDataManager : MonoBehaviour
+public class HoverPanel : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
