@@ -13,7 +13,6 @@ public class UiManager : MonoBehaviour
     void Start()
     {
        
-
     }
 
     public void multiplierButton(){
@@ -33,9 +32,6 @@ public class UiManager : MonoBehaviour
 
     }
 
-   
-
-
     public void ingredientButton(){
         multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
         upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
@@ -53,6 +49,5 @@ public class UiManager : MonoBehaviour
         buttonIng.DOAnchorPos(new Vector2(-600,0),0.25f);
 
     }
-
   
 }
