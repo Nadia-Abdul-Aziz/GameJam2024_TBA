@@ -77,14 +77,14 @@ public class StoreUpgrade : MonoBehaviour
     public void UpgradeListUI(bool isPurchased){
         listIcon.color = isPurchased ? Color.white : Color.black;
         listNameAndQuantity.text = isPurchased ? (ingredient + " x" + level.ToString()) : "???";
-        listMultiplier.text = isPurchased ? ("Multiplier: x" + multiplier.multiplierLevel) : "???";
+        listMultiplier.text = isPurchased ? ("Multiplier: x" + (multiplier.multiplierLevel+1)) : "???";
         listTotalEffect.text = isPurchased ? TotalEffectCalculator() : "No Effect \n0 /s";
     }
 
     //
     string TotalEffectCalculator(){
-        float total = numPerUpgrade*level*multiplier.multiplierLevel;
-        return numPerUpgrade.ToString() + " x " + level.ToString() + " x " + multiplier.multiplierLevel.ToString() + "\n Total: +" + total.ToString() + " /s";
+        float total = numPerUpgrade*level*(multiplier.multiplierLevel+1);
+        return numPerUpgrade.ToString() + " x " + level.ToString() + " x " + (multiplier.multiplierLevel+1).ToString() + "\n Total: +" + total.ToString() + " /s";
     }
 
     //Function that does the math for calculating the upgrade price
