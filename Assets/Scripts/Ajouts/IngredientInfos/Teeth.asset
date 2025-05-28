@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70243a738a40aa34fabd246a0f51209f, type: 3}
+  m_Name: Teeth
+  m_EditorClassIdentifier: 
+  ingredient: Teeth
+  ingredientDesc: Teethy heheheha
+  startPrice: 100
+  numPerUpgrade: 1
+  ingredientImage: {fileID: 6846374326541065284, guid: 10376a2fcfa14cd4bbb5ed9ce9071b9a, type: 3}

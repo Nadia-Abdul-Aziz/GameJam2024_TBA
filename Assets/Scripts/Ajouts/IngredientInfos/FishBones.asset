@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70243a738a40aa34fabd246a0f51209f, type: 3}
+  m_Name: FishBones
+  m_EditorClassIdentifier: 
+  ingredient: Fish Bones
+  ingredientDesc: Bones of a fish uwu
+  startPrice: 20
+  numPerUpgrade: 0.1
+  ingredientImage: {fileID: -2015357044579528039, guid: c57235e76de234c41ae9d61b61b9b3a7, type: 3}
