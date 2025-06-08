@@ -60,8 +60,6 @@ public class GameManager : MonoBehaviour {
         {
             income += (storeUpgrades[i].IncomePerSecond()) * (multipliers[i].CummulativeMultiplier());
         }
-        income += storeUpgrades[6].IncomePerSecond();
-        income += storeUpgrades[7].IncomePerSecond();
         countValue += (income / updatesPerSecond);
         incomePerSecond = income;
         displayNumber();
