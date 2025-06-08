@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70243a738a40aa34fabd246a0f51209f, type: 3}
-  m_Name: Teeth
+  m_Name: Shark Tooth
   m_EditorClassIdentifier: 
-  ingredient: Teeth
-  ingredientDesc: Teethy heheheha
-  startPrice: 100
-  numPerUpgrade: 1
+  ingredient: Shark Tooth
+  ingredientDesc: "I wouldn\u2019t want to be on the receiving end of this! Gives
+    0.5 bubbles per second, per item"
+  startPrice: 150
+  numPerUpgrade: 0.5
   ingredientImage: {fileID: 6846374326541065284, guid: 10376a2fcfa14cd4bbb5ed9ce9071b9a, type: 3}

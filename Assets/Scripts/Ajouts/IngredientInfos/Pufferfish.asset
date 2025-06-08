@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70243a738a40aa34fabd246a0f51209f, type: 3}
-  m_Name: Fishbones
+  m_Name: Pufferfish
   m_EditorClassIdentifier: 
-  ingredient: Fishbones
-  ingredientDesc: Marinated fishbones.... it may not be the best, but it'll give
-    you some strength!  \nGives 0.1 bubbles per second, per item
-  startPrice: 20
-  numPerUpgrade: 0.1
-  ingredientImage: {fileID: -2015357044579528039, guid: c57235e76de234c41ae9d61b61b9b3a7, type: 3}
+  ingredient: Pufferfish
+  ingredientDesc: 'A delicacy for some, a last meal for others. Gives 40 bubbles
+    per second, per item '
+  startPrice: 140000
+  numPerUpgrade: 40
+  ingredientImage: {fileID: -5950742146332168891, guid: 10376a2fcfa14cd4bbb5ed9ce9071b9a, type: 3}

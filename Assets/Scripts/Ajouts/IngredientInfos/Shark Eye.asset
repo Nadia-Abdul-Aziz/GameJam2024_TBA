@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70243a738a40aa34fabd246a0f51209f, type: 3}
-  m_Name: Fishbones
+  m_Name: Shark Eye
   m_EditorClassIdentifier: 
-  ingredient: Fishbones
-  ingredientDesc: Marinated fishbones.... it may not be the best, but it'll give
-    you some strength!  \nGives 0.1 bubbles per second, per item
-  startPrice: 20
-  numPerUpgrade: 0.1
-  ingredientImage: {fileID: -2015357044579528039, guid: c57235e76de234c41ae9d61b61b9b3a7, type: 3}
+  ingredient: Shark Eye
+  ingredientDesc: 'Is every blink a wink when you have one eye? Gives 10 bubbles
+    per second, per item '
+  startPrice: 1300
+  numPerUpgrade: 10
+  ingredientImage: {fileID: 5701137138008200323, guid: c57235e76de234c41ae9d61b61b9b3a7, type: 3}

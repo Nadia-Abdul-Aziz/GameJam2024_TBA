@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] int updatesPerSecond = 10;
     bool isRotated = false;
     public float countValue = 0;
-    float nextTimeCheck = 1;
+    //float nextTimeCheck = 1; removed to use IEnumerator
     // commented for now
     // float mermanTimeCheck = 2;
     public float incomePerSecond = 0;
