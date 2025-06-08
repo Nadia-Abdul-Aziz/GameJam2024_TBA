@@ -1551,6 +1551,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &277012051
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1851,6 +1854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &293103797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4145,6 +4151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77250f403be72394281730b00ec01c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boingWidth: 50
+  boingSpeed: 2
 --- !u!114 &634850934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5467,6 +5475,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!114 &796605462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6575,6 +6586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05df1a1be74fbd4c8a3fc899c0049a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationName: Anim
+  animationDelay: 1
 --- !u!1 &964923833
 GameObject:
   m_ObjectHideFlags: 0
@@ -7267,6 +7280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05df1a1be74fbd4c8a3fc899c0049a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationName: Anim
+  animationDelay: 1
 --- !u!95 &1042197252
 Animator:
   serializedVersion: 7
@@ -7529,6 +7544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05df1a1be74fbd4c8a3fc899c0049a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationName: Anim
+  animationDelay: 1
 --- !u!1 &1050290582
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,6 +7913,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &1122829136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11683,6 +11703,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &1622691752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12317,6 +12340,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &1656562655
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13410,6 +13436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &1823125562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13639,6 +13668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &1870919977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15264,6 +15296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eed5291309ef814ba9e252091679c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  imageToFade: {fileID: 0}
+  fadeDuration: 2
+  delayBetweenFades: 1
 --- !u!212 &2071932686
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16103,6 +16138,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1505557602}
+    - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
+      propertyPath: popupManager
+      value: 
+      objectReference: {fileID: 371188971}
     - target: {fileID: 8901175162454946918, guid: 2c314de4f873c4542a3ae53b00f799a4, type: 3}
       propertyPath: numPerUpgrade
       value: 4

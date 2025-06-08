@@ -1,0 +1,74 @@
+Name
+Desc
+Price
+Num per upgrade
+
+Fishbones
+Marinated fishbones.... it may not be the best, but it'll give you some strength!  \nGives 0.1 bubbles per second, per item
+20
+0.1
+
+Shark Tooth
+I wouldn’t want to be on the receiving end of this! Gives 0.5 bubbles per second, per item
+150
+0.5
+
+Crab Pincher
+A pinch of crab for that snappy flavour. Gives 4 bubbles per second, per item
+1200
+4
+
+Shark Eye
+Is every blink a wink when you have one eye? Gives 10 bubbles per second, per item
+1300
+10
+
+Pufferfish
+A delicacy for some, a last meal for others. Gives 40 bubbles per second, per item
+140000
+40
+
+Turtle Shell
+Seems like the hare was a sore loser. Gives 100 bubbles per second, per item
+1500000
+100
+
+
+
+Multipliers
+
+Name
+Desc
+Price
+Num per upgrade
+
+
+Fishbones x2
+Seems like your bones are getting stronger! A good substitute for milk. Makes fishbones more effective
+100
+2
+
+Shark Tooth x2
+Look what flossing everyday can do to you! Makes Shark Tooth more effective
+1100
+2
+
+Crab Pincher x2
+Everything's better with an extra pair of hands. Or claw. Makes Crab Claw more effective
+120000
+2
+
+Shark Eye x2
+Things are looking up!  Makes Shark Eye more effective
+1300000
+2
+
+Pufferfish x2
+A Pufferfish a day keeps the bad breath away! Makes Pufferfish more effective
+14000000
+2
+
+Turtle Shell x2
+A clean home is a clean mind. Makes Turtle Shell more effective
+200000000
+2
