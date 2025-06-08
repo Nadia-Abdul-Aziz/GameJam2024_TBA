@@ -54,9 +54,10 @@ public class StoreUpgrade : MonoBehaviour
     public void BuyUpgrade(){
         int price = CalculatePrice();
         bool purchasePossible = gameManager.PurchasePossible(price);
-        if (purchasePossible){
+        if (purchasePossible) {
             level++;
             UpdateIngredientUI();
+            SetPopup();
         }
     }
 
@@ -64,7 +65,6 @@ public class StoreUpgrade : MonoBehaviour
     // NEED TO DOUBLE CHECK THIS PART AND POTENTIALLY MAKE DIFFERENT UI UPDATES FOR INGREDIENTS VS MULTIPLIERS
     public void UpdateIngredientUI() {
         //changes elements in dessc tab
-        SetPopup();
 
         //checks if the player has enough to buy, if yes, makes the button interactable
         bool canBuy = gameManager.countValue >= CalculatePrice();
@@ -78,6 +78,7 @@ public class StoreUpgrade : MonoBehaviour
     }
 
     private void SetPopup() {
+        Debug.Log(info.ingredient);
         bool isPurchased = level >= 1 | gameManager.countValue >= CalculatePrice();
         popupManager.SetPrice("Cost: " + CalculatePrice().ToString());
         popupManager.SetIncome(info.numPerUpgrade + "  /s");
