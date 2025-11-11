@@ -56,8 +56,7 @@ public class GameManager : MonoBehaviour {
     void IdleIncome()
     {
         float income = 0;
-        for (int i = 0; i < 6; i++)
-        {
+        for (int i = 0; i < 6; i++) {
             income += (storeUpgrades[i].IncomePerSecond()) * (multipliers[i].CummulativeMultiplier());
         }
         countValue += (income / updatesPerSecond);

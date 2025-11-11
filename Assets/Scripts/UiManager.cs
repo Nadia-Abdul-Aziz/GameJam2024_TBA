@@ -7,7 +7,7 @@ using TMPro;
 
 public class UiManager : MonoBehaviour
 {
-    public RectTransform upgrades , multipliers , ingredients,buttonUpg,buttonMul,buttonIng,buttonExi;
+    public RectTransform upgrades, multipliers, ingredients, buttonUpg, buttonMul, buttonIng, buttonExi;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,16 +21,12 @@ public class UiManager : MonoBehaviour
         upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
         ingredients.DOAnchorPos(new Vector2(-600,0),0.25f);
         multipliers.DOAnchorPos(new Vector2(0,0),0.25f);
-        
     }
 
     public void UpgradeButton(){
-      
-            upgrades.DOAnchorPos(new Vector2(0,0),0.25f);
-            multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
-            ingredients.DOAnchorPos(new Vector2(-300,0),0.25f);
-            
-
+        upgrades.DOAnchorPos(new Vector2(0,0),0.25f);
+        multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
+        ingredients.DOAnchorPos(new Vector2(-300,0),0.25f);
     }
 
    
@@ -40,8 +36,6 @@ public class UiManager : MonoBehaviour
         multipliers.DOAnchorPos(new Vector2(-300,0),0.25f);
         upgrades.DOAnchorPos(new Vector2(-300,0),0.25f);
         ingredients.DOAnchorPos(new Vector2(0,0),0.25f);
-
-
     }
 
     public void exitButton(){
@@ -51,7 +45,6 @@ public class UiManager : MonoBehaviour
         buttonUpg.DOAnchorPos(new Vector2(-600,0),0.25f);
         buttonMul.DOAnchorPos(new Vector2(-600,0),0.25f);
         buttonIng.DOAnchorPos(new Vector2(-600,0),0.25f);
-
     }
 
   
